@@ -17,13 +17,12 @@ docker run -dit `
   --restart unless-stopped `
   --cpus="2" `
   --memory="4g" `
-  --mount type=bind,source="C:/Users/Sai Gopi/Downloads/linux/ubuntu-container",target=/data `
-  -v /var/run/docker.sock:/var/run/docker.sock `
+  --mount type=bind,source="C:\Users\Sai Gopi\Downloads\linux\ubuntu-container",target=/data `
   -p 2222:22 `
   -p 8080:80 `
   --env TZ=Asia/Kolkata `
   --env LANG=en_US.UTF-8 `
-  ubuntu:latest /bin/bash              
+  ubuntu:latest             
 ```
 
 ### Docker Command to Run Ubuntu Linux Container in mac or linux host (Persistent & Long-Term) 
